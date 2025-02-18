@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        a = parseInt(prompt("Give a value for a : "))
+        b = parseInt(prompt("Give a value for b : "))
+        c = parseInt(prompt("Give a value for c : "))
+
+        t = -Infinity // capital I , it refers to INTEGER.MIN_VALUE
+        
+        t = (a>b && a>c) ? a : t
+        t = (b>a && b>c ) ? b : t
+        t = (c>a && c>b) ? c : t
+        t = (a==b && b==c) ? a : t
+
+        console.log("largest is " ,t)
+
+    </script>
+    
+</body>
+</html>

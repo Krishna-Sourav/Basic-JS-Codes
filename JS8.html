@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        a = parseInt(prompt("Give a value for a : "))
+        b = parseInt(prompt("Give a value for b : "))
+        c = parseInt(prompt("Give a value for c : "))
+        d = parseInt(prompt("Give a value for d : "))
+        e = parseInt(prompt("Give a value for e : "))
+
+        t = -Infinity // capital I , it refers to INTEGER.MIN_VALUE
+        
+        t = (a>b && a>c && a>d && a>e) ? a : t
+        t = (b>a && b>c && b>d && b>e) ? b : t
+        t = (c>a && c>b && c>d && c>e) ? c : t
+        t = (d>a && d>b && d>c && d>e) ? d: t
+        t = (e>a && e>b && e>c && e>d) ? e : t  
+        t = (a==b && b==c && c==d && d==e) ? a : t
+
+        console.log("largest is " ,t)
+
+    </script>
+    
+</body>
+</html>
