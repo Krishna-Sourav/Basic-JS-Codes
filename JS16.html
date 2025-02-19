@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Array Input</title>
+</head>
+<body>
+    <script>
+        arr = [];
+        row = parseInt(prompt("Enter number of rows: "));
+        col = parseInt(prompt("Enter number of cols: "));
+
+        for (i = 0; i < row; i++) {
+            arr[i] = [];
+            for (j = 0; j < col; j++) {
+                arr[i][j] = parseInt(prompt("Enter arr[" + i + "][" + j + "]: "));
+            }
+        }
+
+        console.log("2D Array:", arr);
+    </script>
+</body>
+</html>
