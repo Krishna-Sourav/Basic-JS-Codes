@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bird{
+            fly = (name) => {
+                console.log(name," fly !")
+            }
+
+            food = (name) => {
+                console.log(name," eat insects")
+            }
+        }
+
+        a = new Bird()
+        b = prompt("Give a bird name : ")
+        a.fly(b)
+        a.food(b)
+
+    </script>
+</body>
+</html>
